@@ -17,14 +17,8 @@ $(document).ready(function()	{
 	});
 	
 	$(".close").click(function()	{
-		if ($(".content").hasClass("large"))	{
-			$(".content").height(smallHeight).removeClass("large");
-		} else	{
-			$(".content").height(largeHeight).addClass("large");
-		}
+		$(".content").height(smallHeight).removeClass("large");
 	});
-	
-	
 	
 	var state = 1;
 	var stateMax = 0;
@@ -33,6 +27,7 @@ $(document).ready(function()	{
 		stateMax++;
 	});
 	
+
 	$("body").dblclick(function()	{
 		$("header#_" + state).addClass("inactive");
 		
@@ -52,4 +47,5 @@ $(document).ready(function()	{
 		var color = $("header#_" + state + " .color").attr("color");
 		$(".highlight").attr("color", color);
 	});
+
 });
