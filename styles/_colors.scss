@@ -7,11 +7,94 @@ $white: #FFFFFF;
 $lightgreen: hsl(168, 59, 70);
 $darkgreen: hsl(168, 59, 40);
 
-$lightorange: hsl(16, 41, 74);
-$darkorange: hsl(16, 41, 54);
+$lightorange: hsl(26, 41, 74);
+$darkorange: hsl(26, 41, 54);
 
 $lightblue: hsl(201, 41, 74);
 $darkblue: hsl(201, 41, 54);
 
 $lightyellow: hsl(45, 51, 74);
 $darkyellow: hsl(45, 51, 54);
+
+$lightred: hsl(0, 80, 74);
+$darkred: hsl(0, 70, 54);
+
+[color="green"]	{
+	animation-name: pulsateGreen;
+}
+
+[color="orange"]	{
+	animation-name: pulsateOrange;
+}
+
+[color="blue"]	{
+	animation-name: pulsateBlue;
+}
+
+[color="yellow"]	{
+	animation-name: pulsateYellow;
+}
+
+[color="red"]	{
+	animation-name: pulsateRed;
+}
+
+@keyframes pulsateGreen {
+	0% {
+		background-color: $lightgreen;
+	}
+	50% {
+		background-color: $darkgreen;
+	}
+	100% {
+		background-color: $lightgreen;
+	}
+}
+
+@keyframes pulsateOrange {
+	0% {
+		background-color: $lightorange;
+	}
+	50% {
+		background-color: $darkorange;
+	}
+	100% {
+		background-color: $lightorange;
+	}
+}
+
+@keyframes pulsateBlue {
+	0% {
+		background-color: $lightblue;
+	}
+	50% {
+		background-color: $darkblue;
+	}
+	100% {
+		background-color: $lightblue;
+	}
+}
+
+@keyframes pulsateYellow {
+	0% {
+		background-color: $lightyellow;
+	}
+	50% {
+		background-color: $darkyellow;
+	}
+	100% {
+		background-color: $lightyellow;
+	}
+}
+
+@keyframes pulsateRed {
+	0% {
+		background-color: $lightred;
+	}
+	50% {
+		background-color: $darkred;
+	}
+	100% {
+		background-color: $lightred;
+	}
+}
