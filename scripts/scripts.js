@@ -32,6 +32,48 @@ $(document).ready(function()	{
 		$(".browser .blocking").addClass("inactive");
 		$(".browser").addClass("active");
 	});
+	
+	
+	
+	
+	
+	
+	
+	///////////////
+	$("table").on("mouseenter", "td .delete", function()	{
+		$(this).closest("tr").addClass("active");
+	});
+	
+	$("table").on("mouseleave", "td .delete", function()	{
+		$(this).closest("tr").removeClass("active");
+	});
+	
+	$("table").on("click", "td .delete", function()	{
+		$(this).closest("tr").remove();
+	});
+	
+	$("table").on("focus", "td input:not([readonly])", function()	{
+		$(this).closest("tr").addClass("active");
+	});
+	
+	$("table").on("focusout", "td input:not([readonly])", function()	{
+		$(this).closest("tr").removeClass("active");
+	});
+	
+	$("table").on("click", "td .add", function()	{
+		$(this).closest("tr").removeClass("active");
+		$(this).closest("tr").find("input").attr("readonly", "readonly");
+		$(this).removeClass("add").addClass("delete").text("×");
+		
+		var kind = $(this).closest("table").attr("id");
+		var add = 	"<tr>" + 
+						"<td><input value=\"\" placeholder=\"Add " + kind + " to block\"></td>" +
+						"<td><span  class=\"add\">+</span></td>" +
+					"</tr>";
+					
+		$(this).closest("table").append(add);
+
+	});
 
 });
 

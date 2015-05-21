@@ -41,7 +41,7 @@
 						</div>
 						<div class="text">
 							<h1>Your <strong>focus</strong> needs more <strong>focus</strong>!</h1>
-							<p>It’s going pretty well right now, are you sure you want to slack of?</p>
+							<p>It’s going pretty well right now, are you sure you want to slack off?</p>
 							<span class="button">
 								Stop patronizing me!
 							</span>
@@ -120,63 +120,84 @@
 					</header>
 	
 					<main>
-						<table>
+						<table id="app">
 							<tr>
 								<th colspan="2">Apps</th>
 							</tr>
 							<tr>
-								<td>Calendar</td>
-								<td>×</td>
+								<td>
+									<input value="Calendar" readonly="readonly">
+								</td>
+								<td><span class="delete">×</span></td>
 							</tr>
 							<tr>
-								<td>Messenger</td>
-								<td>×</td>
+								<td>
+									<input value="Messenger" readonly="readonly">
+								</td>
+								<td><span class="delete">×</span></td>
 							</tr>
 							<tr>
-								<td>DayOne</td>
-								<td>×</td>
+								<td>
+									<input value="DayOne" readonly="readonly">
+								</td>
+								<td><span class="delete">×</span></td>
 							</tr>
 							<tr>
-								<td>Add app to block</td>
-								<td>+</td>
+								<td>
+									<input value="" placeholder="Add app to block">
+								</td>
+								<td><span class="add">+</span></td>
 							</tr>
 						</table>
 						
-						<table>
+						<table id="website">
 							<tr>
 								<th colspan="2">Websites</th>
 							</tr>
 							<tr>
-								<td>www.facebook.com</td>
-								<td>×</td>
+								<td>
+									<input value="www.facebook.com" readonly="readonly">
+								</td>
+								<td><span class="delete">×</span></td>
 							</tr>
 							<tr>
-								<td>www.twitter.com</td>
-								<td>×</td>
+								<td>
+									<input value="www.twitter.com" readonly="readonly">
+								</td>
+								<td><span class="delete">×</span></td>
 							</tr>
 							<tr>
-								<td>Add website to block</td>
-								<td>+</td>
+								<td>
+									<input value="" placeholder="Add website to block">
+								</td>
+								<td><span class="add">+</span></td>
 							</tr>
 						</table>
 						
-						<table>
+						<table id="notifications">
 							<tr>
 								<th colspan="2">Notifications</th>
 							</tr>
 							<tr>
-								<td>Mail</td>
-								<td>×</td>
+								<td>
+									<input value="Messages" readonly="readonly">
+								</td>
+								<td><span class="delete">×</span></td>
 							</tr>
 							<tr>
-								<td>Messages</td>
-								<td>×</td>
+								<td>
+									<input value="Mail" readonly="readonly">
+								</td>
+								<td><span class="delete">×</span></td>
 							</tr>
 							<tr>
-								<td>Add notifications to block</td>
-								<td>+</td>
+								<td>
+									<input value="" placeholder="Add notifications to block">
+								</td>
+								<td><span class="add">+</span></td>
 							</tr>
 						</table>
+	
 					</main>
 					
 					<footer>

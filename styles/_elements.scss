@@ -169,11 +169,10 @@ table	{
 		
 		&:last-child	{
 			border: none;
-			opacity: .3;
-			
-			&:hover	{
-				cursor: pointer;
-			}
+		}
+		
+		&.active td	{
+			color: $black;
 		}
 	}
 	
@@ -185,6 +184,7 @@ table	{
 	td	{
 		padding: 6px 0;
 		color: $darkgrey;
+		transition: color .3s;
 	}
 	
 	td:last-child	{
@@ -197,6 +197,32 @@ table	{
 	
 	&:last-child	{
 		margin-bottom: none;
+	}
+	
+	input	{
+		margin: 0;
+		padding: 0;
+		font-family: inherit;
+		font-size: inherit;
+		line-height: inherit;
+		font-weight: inherit;
+		color: inherit;
+		border: none;
+		outline: none;
+		background-color: transparent;
+		width: 100%;
+		
+		&::-webkit-input-placeholder	{
+			color: $grey;
+		}
+	}
+	
+	tr:last-child td:last-child	{
+		color: $grey;
+	}
+	
+	tr.active:last-child td:last-child	{
+		color: $black;
 	}
 }
 
