@@ -5,6 +5,7 @@ body	{
 	font-size: 12px;
 	line-height: 1.3em;
 	user-select: none;
+	background-color: black;
 }
 
 h1	{
@@ -28,7 +29,7 @@ p	{
 	
 	background-image: url("../imgs/wallpaper.png");
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: 1280px 800px;
 }
 
 .click-zone	{
@@ -36,7 +37,7 @@ p	{
 	width: 15px;
 	position: fixed;
 	top: 3.5px;
-	right: 359px;
+	left: 905px;
 	cursor: pointer;
 	background-image: url("../imgs/logo.png");
 	background-size: 100%;
@@ -45,7 +46,7 @@ p	{
 .highlight	{
 	position: fixed;
 	top: 8.5px;
-	right: 364px;
+	left: 910px;
 
 	height: 5px;
 	width: 5px;
@@ -60,7 +61,7 @@ p	{
 .app	{
 	position: fixed;
 	top: 31px;
-	right: 226.5px;
+	left: 772px;
 	width: 280px;
 	
 	.edge	{
@@ -72,7 +73,7 @@ p	{
 		margin-right: auto;
 		margin-top: -4px;
 		margin-bottom: -16px;
-		z-index: -1;
+		//z-index: -1;
 	}
 	
 	transition: all .4s ease-in-out;
