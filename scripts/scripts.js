@@ -1,4 +1,6 @@
 $(document).ready(function()	{
+	
+	// Open app
 	$(".click-zone").click(function()	{
 		$(".app").toggleClass("inactive");
 	});
@@ -8,6 +10,7 @@ $(document).ready(function()	{
 	
 	$(".content").height(smallHeight);
 	
+	// Open settings
 	$(".settings").click(function()	{
 		if ($(".content").hasClass("large"))	{
 			$(".content").height(smallHeight).removeClass("large");
@@ -16,6 +19,7 @@ $(document).ready(function()	{
 		}
 	});
 	
+	// Close settings
 	$(".close").click(function()	{
 		$(".content").height(smallHeight).removeClass("large");
 	});
@@ -28,6 +32,8 @@ $(document).ready(function()	{
 	});
 	
 	
+	
+	// Unblock facebook
 	$(".button").click(function()	{
 		$(".browser .blocking").addClass("inactive");
 		$(".browser").addClass("active");
@@ -39,7 +45,7 @@ $(document).ready(function()	{
 	
 	
 	
-	///////////////
+	/////////////// Add sites to block
 	$("table").on("mouseenter", "td .delete", function()	{
 		$(this).closest("tr").addClass("active");
 	});
@@ -101,6 +107,7 @@ function toggleFullScreen() {
 	}
 }
 
+// Change color of header 
 document.addEventListener("keydown", function(e) {
   if (e.keyCode == 13) {
 	toggleFullScreen();
